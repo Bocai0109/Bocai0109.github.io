@@ -97,7 +97,7 @@ vidFade();
 }); 
 
 
-pauseButton.addEventListener("click", function() {
+document.getElementById("btn").addEventListener("click", function() {
   vid.classList.toggle("stopfade");
   if (vid.paused) {
     vid.play();
@@ -133,14 +133,7 @@ pauseButton.addEventListener("click", function() {
 <p><a href="http://google.com">Google Test</a>
 <p>This is a test line</p>
 <p>This is another test line</p>
-<button onclick="vid.classList.toggle("stopfade");
-  if (vid.paused) {
-    vid.play();
-    pauseButton.innerHTML = "Pause";
-  } else {
-    vid.pause();
-    pauseButton.innerHTML = "Paused";
-  }">Pause</button>
+<button id ="btn">Pause</button>
 </div>
 
 
