@@ -73,42 +73,8 @@ a:hover{
 
 
 </style>
-<script>
-var vid = document.getElementById("bgvid");
-var pauseButton = document.querySelector("#btn");
-
-if (window.matchMedia('(prefers-reduced-motion)').matches) {
-    vid.removeAttribute("autoplay");
-    vid.pause();
-    pauseButton.innerHTML = "Paused";
-}
-
-function vidFade() {
-  vid.classList.add("stopfade");
-}
-
-vid.addEventListener('ended', function()
-{
-// only functional if "loop" is removed 
-vid.pause();
-// to capture IE10
-vidFade();
-}); 
 
 
-pauseButton.addEventListener("click", function() {
-  vid.classList.toggle("stopfade");
-  if (vid.paused) {
-    vid.play();
-    pauseButton.innerHTML = "Pause";
-  } else {
-    vid.pause();
-    pauseButton.innerHTML = "Paused";
-  }
-})
-
-
-</script>
 </head>
 <body>
 
@@ -129,8 +95,7 @@ pauseButton.addEventListener("click", function() {
   font-size: 1.2rem;">
   
 <h1>Happy Birthday Chenyan!</h1>
-  <p>The miracle is you, that you exist is a perpetual suprise which is life.</p>
-<button id ="btn">Pause</button>
+  <p style="text-align:right;">The miracle is you, that you exist is a perpetual suprise which is life.</p>
 </div>
 
 
