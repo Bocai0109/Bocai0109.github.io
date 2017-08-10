@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Testing Testing 123</title>
+<title>Happy Birthday</title>
 <style>
 
 body {
@@ -76,7 +76,7 @@ a:hover{
 </style>
 <script>
 var vid = document.getElementById("bgvid");
-var pauseButton = document.querySelector("#polina button");
+var pauseButton = document.querySelector("#box button");
 
 if (window.matchMedia('(prefers-reduced-motion)').matches) {
     vid.removeAttribute("autoplay");
@@ -97,7 +97,7 @@ vidFade();
 }); 
 
 
-document.getElementById("btn").addEventListener("click", function() {
+pauseButton.addEventListener("click", function() {
   vid.classList.toggle("stopfade");
   if (vid.paused) {
     vid.play();
@@ -108,6 +108,7 @@ document.getElementById("btn").addEventListener("click", function() {
   }
 })
 
+
 </script>
 </head>
 <body>
@@ -116,7 +117,7 @@ document.getElementById("btn").addEventListener("click", function() {
 <video poster="img/1.png" id="bgvid" playsinline autoplay muted loop>
   <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
 <source src="Sequence_02.webm" type="video/webm">
-<source src="Sequence_02.mp4" type="video/mp4">
+<source src="Sequence_02_1.mp4" type="video/mp4">
 </video>
 <div id="box" style="font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
   font-weight:100; 
@@ -128,12 +129,9 @@ document.getElementById("btn").addEventListener("click", function() {
   float: right;
   font-size: 1.2rem;">
   
-<h1>Test</h1>
-<p>this is a test line 
-<p><a href="http://google.com">Google Test</a>
-<p>This is a test line</p>
-<p>This is another test line</p>
-<button id ="btn">Pause</button>
+<h1>Happy Birthday Chenyan!</h1>
+  <p>The miracle is you, that you exist is a perpetual suprise which is life.</p>
+<button>Pause</button>
 </div>
 
 
