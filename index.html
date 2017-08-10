@@ -39,7 +39,6 @@ video {
 }
 h1 {
   font-size: 3rem;
-  text-transform: uppercase;
   margin-top: 0;
   letter-spacing: .3rem;
 }
@@ -76,7 +75,7 @@ a:hover{
 </style>
 <script>
 var vid = document.getElementById("bgvid");
-var pauseButton = document.querySelector("#box button");
+var pauseButton = document.querySelector("#btn");
 
 if (window.matchMedia('(prefers-reduced-motion)').matches) {
     vid.removeAttribute("autoplay");
@@ -131,7 +130,7 @@ pauseButton.addEventListener("click", function() {
   
 <h1>Happy Birthday Chenyan!</h1>
   <p>The miracle is you, that you exist is a perpetual suprise which is life.</p>
-<button>Pause</button>
+<button id ="btn">Pause</button>
 </div>
 
 
