@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>chenyan</title>
+<title>Chenyan</title>
 <style>
 
 body {
@@ -73,8 +73,14 @@ a:hover{
 
 
 </style>
-
-
+  <script>
+    document.getElementById("date").innerHTML = 
+                  currentdate.getDay()+"   "
+                + currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear()
+  
+  </script>
 </head>
 <body>
 
@@ -82,10 +88,10 @@ a:hover{
   
 
 
-<video poster="img/1.png" id="bgvid" playsinline autoplay muted loop>
+<video poster="Winterfell/Winterfell.jpg" id="bgvid" playsinline autoplay muted loop>
  
-<source src="Sequence_02.webm" type="video/webm">
-<source src="Sequence_02_1.mp4" type="video/mp4">
+<source src="Winterfell/Winterfell.webm" type="video/webm">
+<source src="Winterfell/Winterfell.mp4" type="video/mp4">
 </video>
 <div id="box" style="font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
   font-weight:100; 
@@ -97,8 +103,8 @@ a:hover{
   float: right;
   font-size: 1.2rem;">
   
-<h1>Happy (belated) Birthday Chenyan!</h1>
-  <p style="text-align:right;">The miracle is you, that you exist is a perpetual suprise which is life.</p>
+<h3 id="date"> </h3>
+  <p style="text-align:right;"></p>
 </div>
 
 
