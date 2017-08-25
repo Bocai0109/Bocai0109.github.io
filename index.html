@@ -73,15 +73,9 @@ a:hover{
 
 
 </style>
+  <script src="js/moment.js"></script>
   <script>
-    var currentdate = new Date(); 
-    document.getElementById("date").innerHTML = "Test String";
-                  
-                 /*  currentdate.getDay()+"   "
-                + currentdate.getDate() + "/"
-                + (currentdate.getMonth()+1)  + "/" 
-                + currentdate.getFullYear();
-  */
+    document.getElementById("date").innerHTML = moment().format('MMMM Do YYYY, h:mm:ss a');
   </script>
 </head>
 <body>
